@@ -9,6 +9,8 @@ enter_my_docker () {
   -e DOCKER_UID=$UID \
   -e DOCKER_USER=$USER \
   -v $HOME/src:$HOME/src \
+  -v $HOME/Desktop:$HOME/Desktop \
+  -v $HOME/Pictures:$HOME/Pictures \
   -v $HOME/.ssh:/my_dockers/ssh_config \
   my_dockers/$1
 }
