@@ -6,6 +6,7 @@ RUN dpkg --add-architecture i386
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get install -y ant
+RUN apt-get install -y apt-utils
 RUN apt-get install -y autoconf
 RUN apt-get install -y automake
 RUN apt-get install -y bash-completion
@@ -23,6 +24,8 @@ RUN apt-get install -y gcc-multilib
 RUN apt-get install -y gettext
 RUN apt-get install -y git
 RUN apt-get install -y git-core
+RUN apt-get install -y graphicsmagick
+RUN apt-get install -y imagemagick
 RUN apt-get install -y intltool
 RUN apt-get install -y lib32ncurses5
 RUN apt-get install -y lib32z1
@@ -48,8 +51,10 @@ RUN apt-get install -y libtool
 RUN apt-get install -y libudev-dev
 RUN apt-get install -y libxml-parser-perl
 RUN apt-get install -y lzma
+RUN apt-get install -y maven
 RUN apt-get install -y ninja-build
 RUN apt-get install -y ocaml-findlib
+RUN apt-get install -y openjdk-8-jdk
 RUN apt-get install -y openssh-server
 RUN apt-get install -y pkg-config
 RUN apt-get install -y sharutils
