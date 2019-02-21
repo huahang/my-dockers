@@ -12,5 +12,5 @@ enter_my_docker () {
   -v $HOME/Desktop:$HOME/Desktop \
   -v $HOME/Pictures:$HOME/Pictures \
   -v $HOME/.ssh:/my_dockers/ssh_config \
-  my_dockers/$1
+  $1
 }
